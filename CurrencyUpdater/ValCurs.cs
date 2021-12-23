@@ -4,13 +4,14 @@ using System.Xml.Serialization;
 namespace CurrencyUpdater
 {
 
-    // Примечание. Для запуска созданного кода может потребоваться NET Framework версии 4.5 или более поздней версии и .NET Core или Standard версии 2.0 или более поздней.
-    /// <remarks/>
+    /// <summary>
+    /// Классс хранящий несколько валют получаемых с http://www.cbr.ru/scripts/XML_daily.asp. Необходим для дессериализации XML.
+    /// </summary>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ValCurs
+    public class ValCurs
     {
 
         private ValCursValute[] valuteField;

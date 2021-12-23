@@ -7,10 +7,15 @@ using System.Text;
 
 namespace CurrencyUpdater
 {
-    // ПРИМЕЧАНИЕ. Можно использовать команду "Переименовать" в меню "Рефакторинг", чтобы изменить имя интерфейса "IService1" в коде и файле конфигурации.
+ 
     [ServiceContract]
     public interface ICurrencyUpdate
     {
+        /// <summary>
+        /// Получить актуальный курс вальты. 
+        /// </summary>
+        /// <param name="charCode">Код валюты.</param>
+        /// <returns>Числовое значение курса валюты к рублю.</returns>
         [OperationContract]
         double GetCurrency(string charCode);
     }

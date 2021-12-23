@@ -1,10 +1,14 @@
 ﻿namespace CurrencyUpdater
 {
+
+    /// <summary>
+    /// Классс хранящий одну валюту получаемую из из класса ValCurs. Необходим для дессериализации XML.
+    /// </summary>
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ValCursValute
+    public  class ValCursValute
     {
 
         private ushort numCodeField;
