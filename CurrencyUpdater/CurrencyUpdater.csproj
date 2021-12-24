@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICurrencyUpdate.cs" />
+    <Compile Include="InvalidCurrencyFault.cs" />
+    <Compile Include="InvalidDateFault.cs" />
+    <Compile Include="InvalidServerFault.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CurrencyUpdate.cs" />
     <Compile Include="ValCurs.cs" />

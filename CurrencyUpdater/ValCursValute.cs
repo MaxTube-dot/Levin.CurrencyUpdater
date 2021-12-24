@@ -11,11 +11,11 @@
     public  class ValCursValute
     {
 
-        private ushort numCodeField;
+        private uint numCodeField;
 
         private string charCodeField;
 
-        private ushort nominalField;
+        private uint nominalField;
 
         private string nameField;
 
@@ -24,7 +24,7 @@
         private string idField;
 
         /// <remarks/>
-        public ushort NumCode
+        public uint NumCode
         {
             get
             {
@@ -50,7 +50,7 @@
         }
 
         /// <remarks/>
-        public ushort Nominal
+        public uint Nominal
         {
             get
             {

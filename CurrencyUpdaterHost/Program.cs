@@ -10,10 +10,17 @@ namespace CurrencyUpdaterHost
 
             using (var host  = new ServiceHost(typeof(CurrencyUpdater.CurrencyUpdate)))
             {
-                host.Open();
+                try
+                {
+                    host.Open();
 
-                Console.WriteLine("Host open");
-
+                    Console.WriteLine("Host open");
+                }
+                catch (AddressAlreadyInUseException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+ 
                 Console.ReadLine();
             }
         }
