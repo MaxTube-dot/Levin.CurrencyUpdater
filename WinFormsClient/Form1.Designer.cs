@@ -146,9 +146,8 @@ namespace WinFormsClient
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label5.Location = new System.Drawing.Point(10, 205);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 20);
+            this.label5.Size = new System.Drawing.Size(0, 20);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Код валюты";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button3

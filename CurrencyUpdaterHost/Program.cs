@@ -14,7 +14,7 @@ namespace CurrencyUpdaterHost
                 {
                     host.Open();
 
-                    Console.WriteLine("Host open");
+                    Console.WriteLine("Host sarted success");
                 }
                 catch (AddressAlreadyInUseException ex)
                 {
